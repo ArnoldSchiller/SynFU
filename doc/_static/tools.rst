@@ -49,7 +49,7 @@ Supported configuration
 
 .. code-block:: yaml
 
-	--- !<tag:news.piratenpartei.de,2009:synfu/reactor>
+	--- !<tag:news.bgepartei.de,2009:synfu/reactor>
 	settings:
 		outlook_hacks  : yes
 		complex_footer : yes
@@ -130,16 +130,16 @@ Supported configuration
 
 .. code-block:: yaml
 
-	--- !<tag:news.piratenpartei.de,2009:synfu/postfilter>
+	--- !<tag:news.bgepartei.de,2009:synfu/postfilter>
 	settings:
 		inn_sm         : /usr/lib/news/bin/sm
-		inn_host       : news.piratenpartei.de
+		inn_host       : news.bgepartei.de
 		verbose        : yes
 		verbosity      : 2
-		default_sender : mail2news@piratenpartei.de
+		default_sender : mail2news@bgepartei.de
 		mail2news_cmd  : |
 			/usr/local/bin/synfu-reactor |
-			/usr/lib/news/bin/mailpost -b /tmp -x In-Reply-To:User-Agent -d pirates {0[NNTP_ID]}
+			/usr/lib/news/bin/mailpost -b /tmp -x In-Reply-To:User-Agent -d bgepartei {0[NNTP_ID]}
 		news2mail_cmd  : |
 			/usr/sbin/sendmail -oi -oem -ee -odq -f "{0[FROM]}" -p "NNTP:{0[HOST]}" {1}
 		use_path_marker : yes
@@ -147,18 +147,18 @@ Supported configuration
 	
 	filters:
 	      
-		- nntp : pirates.de.region.hh.test
-		  smtp : .*test.lists.piratenpartei-hamburg.de
-		  from : test@piratenpartei-hamburg.de
-		 sender: mail2news@nordpiraten.de
+		- nntp : bgepartei.de.region.hh.test
+		  smtp : .*test.lists.bgepartei-hamburg.de
+		  from : test@bgepartei-hamburg.de
+		 sender: mail2news@nordbge.de
 	
-		- nntp : pirates.de.test
-		  smtp : .*test.lists.piratenpartei.de
-		  from : test@lists.piratenpartei.de
+		- nntp : bgepartei.de.test
+		  smtp : .*test.lists.bgepartei.de
+		  from : test@lists.bgepartei.de
 	
-		- nntp : pirates.de.talk.politik.etc.pflege
-		  smtp : .*ag-pflege.lists.piratenpartei.de
-		  from : ag-pflege@lists.piratenpartei.de
+		- nntp : bgepartei.de.talk.politik.etc.pflege
+		  smtp : .*ag-pflege.lists.bgepartei.de
+		  from : ag-pflege@lists.bgepartei.de
 
 
 .. table::
@@ -243,7 +243,7 @@ Supported configuration
 
 .. code-block:: yaml
 
-	--- !<tag:news.piratenpartei.de,2010:synfu/imp>
+	--- !<tag:news.bgepartei.de,2010:synfu/imp>
 	settings:
 	   verbose    : yes
 	   verbosity  : 3
@@ -254,8 +254,8 @@ Supported configuration
 	      https_proxy: http://host:port
 
 	      listinfo:
-	         - host: lists.piratenpartei.de
-	           info: https://service.piratenpartei.de/mailman/listinfo
+	         - host: lists.bgepartei.de
+	           info: https://service.bgepartei.de/mailman/listinfo
 
 
 
@@ -274,7 +274,7 @@ A fresh installation contains the group **groom_newsgroups** which represents th
 
 
 .. _`SynCom`: 
-	http://wiki.piratenpartei.de/AG_Parteikommunikation#SynCom
+	http://wiki.bgepartei.de/AG_Parteikommunikation#SynCom
 
 .. _`INN`:
 	http://www.eyrie.org/~eagle/software/inn/

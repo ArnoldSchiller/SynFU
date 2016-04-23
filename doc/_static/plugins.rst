@@ -39,7 +39,7 @@ Supported configuration
 
 .. code-block:: yaml
 
-	--- !<tag:news.piratenpartei.de,2010:synfu/imp>
+	--- !<tag:news.bgepartei.de,2010:synfu/imp>
 	# ...
 	jobs:
 	    # ...
@@ -49,8 +49,8 @@ Supported configuration
 	      https_proxy: http://host:port
 
 	      listinfo:
-	         - host: lists.piratenpartei.de
-	           info: https://service.piratenpartei.de/mailman/listinfo
+	         - host: lists.bgepartei.de
+	           info: https://service.bgepartei.de/mailman/listinfo
 	# ...
 
 .. table::
@@ -77,7 +77,7 @@ The following parameters are recognized in a listinfo definition:
 	============== ==================== ===========
 
 .. _`SynCom`: 
-	http://wiki.piratenpartei.de/AG_Parteikommunikation#SynCom
+	http://wiki.bgepartei.de/AG_Parteikommunikation#SynCom
 
 .. _`INN`:
 	http://www.eyrie.org/~eagle/software/inn/

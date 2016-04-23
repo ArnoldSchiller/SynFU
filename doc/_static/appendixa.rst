@@ -8,7 +8,7 @@ and represents a working sample.
 
 .. code-block:: yaml
 
-        --- !<tag:news.piratenpartei.de,2009:synfu/reactor>
+        --- !<tag:news.bgepartei.de,2009:synfu/reactor>
         settings:
               outlook_hacks  : yes
               complex_footer : yes
@@ -16,85 +16,85 @@ and represents a working sample.
               verbose        : yes
               verbosity      : 2
 
-        --- !<tag:news.piratenpartei.de,2009:synfu/postfilter>
+        --- !<tag:news.bgepartei.de,2009:synfu/postfilter>
         settings:
               inn_sm         : /usr/lib/news/bin/sm
-              inn_host       : news.piratenpartei.de
+              inn_host       : news.bgepartei.de
               verbose        : yes
               verbosity      : 2
-              default_sender : mail2news@piratenpartei.de
+              default_sender : mail2news@bgepartei.de
               mail2news_cmd  : |
                 /usr/local/bin/synfu-reactor |
-                /usr/lib/news/bin/mailpost -b /tmp -x In-Reply-To:User-Agent -d pirates {0[NNTP_ID]}
+                /usr/lib/news/bin/mailpost -b /tmp -x In-Reply-To:User-Agent -d bgepartei {0[NNTP_ID]}
               news2mail_cmd  : |
                 /usr/sbin/sendmail -oi -oem -ee -odq -f "{0[FROM]}" -p "NNTP:{0[HOST]}" {1}
 
         filters:
 
-            - nntp : pirates.de.region.hh.misc
+            - nntp : bgepartei.de.region.hh.misc
               smtp : .*list.hh.aktive
-              from : aktive@piratenpartei-hamburg.de
-              sender: mail2news@nordpiraten.de
+              from : aktive@bgepartei-hamburg.de
+              sender: mail2news@nordbge.de
               force_tag: PPD-HH
               
-            - nntp : pirates.de.region.hh.test
-              smtp : .*test.lists.piratenpartei-hamburg.de
-              from : test@piratenpartei-hamburg.de
-              sender: mail2news@nordpiraten.de
+            - nntp : bgepartei.de.region.hh.test
+              smtp : .*test.lists.bgepartei-hamburg.de
+              from : test@bgepartei-hamburg.de
+              sender: mail2news@nordbge.de
 
-            - nntp : pirates.de.test
-              smtp : .*test.lists.piratenpartei.de
-              from : test@lists.piratenpartei.de
+            - nntp : bgepartei.de.test
+              smtp : .*test.lists.bgepartei.de
+              from : test@lists.bgepartei.de
               force_tag: PPD-HH
               description : Fixed description for GroomNewsgroups
 
-            - nntp : pirates.de.talk.politik.etc.pflege
-              smtp : .*ag-pflege.lists.piratenpartei.de
-              from : ag-pflege@lists.piratenpartei.de
+            - nntp : bgepartei.de.talk.politik.etc.pflege
+              smtp : .*ag-pflege.lists.bgepartei.de
+              from : ag-pflege@lists.bgepartei.de
 
-            - nntp : pirates.de.region.nw.ak.gesundheit
-              smtp : .*nrw-ak-gesundheit.lists.piratenpartei.de
-              from : nrw-ak-gesundheit@lists.piratenpartei.de
+            - nntp : bgepartei.de.region.nw.ak.gesundheit
+              smtp : .*nrw-ak-gesundheit.lists.bgepartei.de
+              from : nrw-ak-gesundheit@lists.bgepartei.de
 
-            - nntp : pirates.de.talk.politik.etc.pflege
-              smtp : .*ag-pflege.lists.piratenpartei.de
-              from : ag-pflege@lists.piratenpartei.de
+            - nntp : bgepartei.de.talk.politik.etc.pflege
+              smtp : .*ag-pflege.lists.bgepartei.de
+              from : ag-pflege@lists.bgepartei.de
 
-            - nntp : pirates.de.talk.politik.etc.gesundheit
-              smtp : .*ag-gesundheitswesen.lists.piratenpartei.de
-              from : ag-gesundheitswesen@lists.piratenpartei.de
+            - nntp : bgepartei.de.talk.politik.etc.gesundheit
+              smtp : .*ag-gesundheitswesen.lists.bgepartei.de
+              from : ag-gesundheitswesen@lists.bgepartei.de
 
-            - nntp : pirates.de.region.sn
-              smtp : .*sachsen.lists.piratenpartei.de
-              from : sachsen@lists.piratenpartei.de
+            - nntp : bgepartei.de.region.sn
+              smtp : .*sachsen.lists.bgepartei.de
+              from : sachsen@lists.bgepartei.de
 
-            - nntp : pirates.de.region.he.darmstadt
-              smtp : .*darmstadt.piratenpartei-hessen.de
-              from : darmstadt@piratenpartei-hessen.de
+            - nntp : bgepartei.de.region.he.darmstadt
+              smtp : .*darmstadt.bgepartei-hessen.de
+              from : darmstadt@bgepartei-hessen.de
 
-            - nntp : pirates.de.region.ni.misc
-              smtp : .*aktive-nds.lists.piraten-nds.de
-              from : aktive-nds@lists.piraten-nds.de
+            - nntp : bgepartei.de.region.ni.misc
+              smtp : .*aktive-nds.lists.bgeserver.de
+              from : aktive-nds@lists.bgeserver.de
 
-            - nntp : pirates.de.region.ni.braunschweig
-              smtp : .*braunschweig.lists.piratenpartei-niedersachsen.de
-              from : bs-piraten@gomex.de
+            - nntp : bgepartei.de.region.ni.braunschweig
+              smtp : .*braunschweig.lists.bgepartei-niedersachsen.de
+              from : bs-bge@gomex.de
 
-            - nntp : pirates.de.region.rp.neustadt
-              smtp : .*rlp-neustadt@lists.piratenpartei.de
-              from : rlp-neustadt@lists.piratenpartei.dee
+            - nntp : bgepartei.de.region.rp.neustadt
+              smtp : .*rlp-neustadt@lists.bgepartei.de
+              from : rlp-neustadt@lists.bgepartei.dee
 
-            - nntp : pirates.de.region.sh.misc
-              smtp : .*diskurs.lists.piratenpartei-sh.de
-              from : diskurs@lists.piratenpartei-sh.de
-              sender: mail2news@nordpiraten.de
+            - nntp : bgepartei.de.region.sh.misc
+              smtp : .*diskurs.lists.bgepartei-sh.de
+              from : diskurs@lists.bgepartei-sh.de
+              sender: mail2news@nordbge.de
 
-            - nntp : pirates.de.region.sh.announce
-              smtp : .*ankuendigungen.lists.piratenpartei-sh.de
-              from : ankuendigungen@lists.piratenpartei-sh.de
-              sender: mail2news@nordpiraten.de
+            - nntp : bgepartei.de.region.sh.announce
+              smtp : .*ankuendigungen.lists.bgepartei-sh.de
+              from : ankuendigungen@lists.bgepartei-sh.de
+              sender: mail2news@nordbge.de
 
-    --- !<tag:news.piratenpartei.de,2010:synfu/imp>
+    --- !<tag:news.bgepartei.de,2010:synfu/imp>
         settings:
             verbose    : yes
             verbosity  : 3
@@ -105,7 +105,7 @@ and represents a working sample.
     #                https_proxy: http://host:port
 
                     listinfo:
-                        - host: lists.piratenpartei.de
-                          info: https://service.piratenpartei.de/mailman/listinfo
+                        - host: lists.bgepartei.de
+                          info: https://service.bgepartei.de/mailman/listinfo
 
 ...

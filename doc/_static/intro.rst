@@ -7,7 +7,7 @@ So what is SynFU all about?
 | SynFU (short for *SynCom Filter Utilities*) is a comprehensive set of easy-to-setup,
 | easy-to-use tools for NNTP<-->Mail two way sync.
 
-The development takes part as a component of the so called SynCom_ concept developed by Members of the `Bundes-IT`_, a part of the `Piratenpartei Deutschland`_.
+The development takes part as a component of the so called SynCom_ concept developed by Members of the `Bundes-IT`_, a part of the `BGEpartei Deutschland`_.
 
 At the current state SynFU provides three components:
 
@@ -35,13 +35,13 @@ It provides benefits in performance and configurability while keeping the expose
 ***Because, you have the choice to!***
 
 .. _SynCom:
-	http://wiki.piratenpartei.de/AG_Parteikommunikation#SynCom
+	http://wiki.bgepartei.de/AG_Parteikommunikation#SynCom
 
 .. _`Bundes-IT`:
-	http://wiki.piratenpartei.de/IT
+	http://wiki.bgepartei.de/IT
 
-.. _`Piratenpartei Deutschland`:
-	http://www.piratenpartei.de/
+.. _`BGEpartei Deutschland`:
+	http://www.bgepartei.de/
 
 .. _INN:
 	http://www.eyrie.org/~eagle/software/inn/

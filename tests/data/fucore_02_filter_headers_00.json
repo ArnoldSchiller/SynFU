@@ -1,7 +1,7 @@
 [
     [
         "Return-Path", 
-        "<test-bounces@lists.piratenpartei.de>"
+        "<test-bounces@lists.bgeserver.de>"
     ], 
     [
         "Message-ID", 
@@ -25,10 +25,10 @@
     ], 
     [
         "List-Id", 
-        "=?utf-8?q?Testliste_f=C3=BCr_Tests_der_Synchronisation_mit_Syncom?=\r\n\t<test.lists.piratenpartei.de>"
+        "=?utf-8?q?Testliste_f=C3=BCr_Tests_der_Synchronisation_mit_Syncom?=\r\n\t<test.lists.bgeserver.de>"
     ], 
     [
         "Errors-To", 
-        "test-bounces@lists.piratenpartei.de"
+        "test-bounces@lists.bgeserver.de"
     ]
 ]

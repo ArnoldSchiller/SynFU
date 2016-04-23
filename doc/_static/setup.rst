@@ -31,7 +31,7 @@ Each configuration section starts with a tag in the form:
 
 .. code-block:: yaml
 
-	--- !<tag:news.piratenpartei.de,YEAR:synfu/MODULE>
+	--- !<tag:news.bgepartei.de,YEAR:synfu/MODULE>
 
 With *YEAR* marking the initial release of a module and *MODULE* identifying
 the specific module:
@@ -61,7 +61,7 @@ news2mail line and the addition of the following line to */etc/news/newsfeeds*:
 .. code-block:: bash
 
 	# Replace the default news2mail line with this one
-	synfu:*/!pirates:Tc,Ac,WnN:/usr/local/bin/synfu-news2mail
+	synfu:*/!bgepartei:Tc,Ac,WnN:/usr/local/bin/synfu-news2mail
 
 
 Integration with Mailman (via Procmail)

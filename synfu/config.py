@@ -72,7 +72,7 @@ class _FUCoreConfig(yaml.YAMLObject):
         self.blacklist_filename = self.settings.get('blacklist_filename', None)
 
 class _ReactorConfig(_FUCoreConfig):
-    yaml_tag = u'tag:news.piratenpartei.de,2009:synfu/reactor'
+    yaml_tag = u'tag:news.bgepartei.de,2009:synfu/reactor'
     
     def __init__(self, **kwargs):
         super(_ReactorConfig, self).__init__(**kwargs)
@@ -93,7 +93,7 @@ class _ReactorConfig(_FUCoreConfig):
         return self
 
 class _PostfilterConfig(_FUCoreConfig):
-    yaml_tag = u'tag:news.piratenpartei.de,2009:synfu/postfilter'
+    yaml_tag = u'tag:news.bgepartei.de,2009:synfu/postfilter'
     
     def __init__(self, **kwargs):
         super(_PostfilterConfig, self).__init__(**kwargs)
@@ -130,7 +130,7 @@ class _PostfilterConfig(_FUCoreConfig):
         return self
 
 class _ImpConfig(_FUCoreConfig):
-    yaml_tag = u'tag:news.piratenpartei.de,2010:synfu/imp'
+    yaml_tag = u'tag:news.bgepartei.de,2010:synfu/imp'
 
     def __init__(self, **kwargs):
         super(_FuseConfig, self).__init__(**kwargs)
