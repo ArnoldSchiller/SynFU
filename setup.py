@@ -32,7 +32,7 @@ Created by René Köcher on 2009-12-19.
 from setuptools import setup, find_packages
 import sys, os
 
-version='0.4.16'
+version='0.4.17'
 
 setup(name='SynFU',
       version=version,
@@ -40,8 +40,8 @@ setup(name='SynFU',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-        'PyYAML > 3.08',
-        'BeautifulSoup < 3.1.0'
+        'PyYAML > 3.10',
+	'beautifulsoup4 > 4.0.5'
       ],
       entry_points={
         'console_scripts' : [

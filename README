@@ -1,0 +1,5 @@
+Fork from Shirk SynFU for bgeserver.de
+Need BeautifulSoup<3.1.0 https://pypi.python.org/simple/BeautifulSoup/
+Need libyaml-dev sudo apt-get install libyaml-dev
+python ./setup.py install --prefix=/usr
+

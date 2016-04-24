@@ -39,7 +39,7 @@
 """
 
 import sys, os, re, urllib2, pkgutil
-from BeautifulSoup import BeautifulSoup, StopParsing
+from bs4 import BeautifulSoup, StopParsing
 
 from synfu.config import Config
 from synfu.imp import ImpJob
