@@ -1,5 +1,8 @@
 Fork from Shirk SynFU for bgeserver.de
-Need BeautifulSoup<3.1.0 https://pypi.python.org/simple/BeautifulSoup/
+Need BeautifulSoup<3.1.0 https://pypi.python.org/simple/BeautifulSoup/ doesn't exist
+Changed "from BeautifulSoup" to bs4
+Need  'beautifulsoup4 > 4.0.5' now
 Need libyaml-dev sudo apt-get install libyaml-dev
+Need Sphinx for Doc sudo apt-get install python-sphinx
 python ./setup.py install --prefix=/usr
 
